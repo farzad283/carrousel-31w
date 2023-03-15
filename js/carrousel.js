@@ -7,7 +7,7 @@
     let elmBouton__x = document.querySelector('.bouton__x')
     let elmGalerie = document.querySelector('.galerie')
     let elmGalerie__img = elmGalerie.querySelectorAll('img')
-    let elmCarrousel__figure = document.querySelector('.carrousel__figure') //
+    let elmCarrousel__figure = document.querySelector('.carrousel__figure') // conteneur d'images
     let elmCarrousel__form= document.querySelector('.carrousel__form') // conteneur des radio bouton
     console.log(elmGalerie__img.length)
 
