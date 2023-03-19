@@ -22,6 +22,7 @@
 
 .carrousel--ouvrir {
     transform : scale(1);
+      
 }
 
 /* bouton de fermeture de la boîte modale */
@@ -53,12 +54,25 @@
     opacity: 0;
     transition: opacity .5s;
     object-fit: cover;
-    z-index: 9;
 }
 
 .carrousel__img--activer{
     opacity: 1;
 }
+
+.controls{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    .bouton__prochain{
+        position: absolute;
+        right:20px;
+      }
+      .bouton__precedent{
+        position: absolute;
+        left: 20px;
+      }
+ }
 
 /* le conteneur des boutons radio */
 .carrousel__form {
