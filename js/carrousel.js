@@ -34,15 +34,19 @@
     elmBouton__precedent.addEventListener('click', function() {
         if (index > 0) {
             index--;
-            activer__image(index);
+        } else {
+            index = elmGalerie__img.length - 1;
         }
+        activer__image(index);
     });
     
     elmBouton__suivant.addEventListener('click', function() {
         if (index < elmGalerie__img.length - 1) {
             index++;
-            activer__image(index);
+        } else {
+            index = 0;
         }
+        activer__image(index);
     });
 
     function ajouter_carrousel(){
